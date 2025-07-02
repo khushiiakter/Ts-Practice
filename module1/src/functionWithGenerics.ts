@@ -68,17 +68,19 @@ const addCourseToStudent =<T>(student: T)=>{
         ...student, nextLevel
     }
 }
-type Student ={
-    name:string;
-    roll:number;
-};
-const student1 =addCourseToStudent<Student>({
+// type Student ={
+//     name:string;
+//     roll:number;
+// };
+const student1 =addCourseToStudent({
     name:"khushi",
     roll: 33,
+    email: "khusi@gmail.com"
 });
-const student2 =addCourseToStudent<Student>({
+const student2 =addCourseToStudent({
     name:"khushiafdfdf",
     roll: 33,
+    
 });
 
 console.log(student1, student2);
